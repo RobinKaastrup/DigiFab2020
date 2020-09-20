@@ -336,7 +336,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<!-- WIP <script>
+			<script>
 				document.onmousemove = function (evt) {
 					var gem = document.getElementsByClassName("logo")[0];
 					var posX = evt.clientX;
@@ -344,12 +344,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					//console.log(posY-window.innerHeight/3.6);
 					//console.log(posX-window.innerWidth/2);
 					console.log(Math.atan((posY-window.innerHeight/3.6)/(posX-window.innerWidth/2)));
-					gem.style.transform = 'rotate('+Math.atan((posY-window.innerHeight/3.6)/(posX-window.innerWidth/2))+'rad)';
+					gem.style.transform = 'rotate('+Math.atan((posY-window.innerHeight/3.6)/-(posX-window.innerWidth/2))+'rad)';
+					console.log('rotate('+Math.atan(-(posY-window.innerHeight/3.6)/-(posX-window.innerWidth/2))+'rad)');
+					//gem.style.transform = 'rotate('+2*Math.asin((posY-window.innerHeight/3.6)/Math.sqrt(Math.pow(posX-window.innerWidth/2, 2)+Math.pow(posY-window.innerHeight/3.6, 2)))+'rad)';
 					setTimeout(50);
 					
 				}  
 			</script>
-			-->
+			
 				
 		
 		
